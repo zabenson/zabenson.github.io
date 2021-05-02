@@ -1,0 +1,138 @@
+
+body,
+html {
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    color: #32373B;
+}
+
+header{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: #E29578;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.button a {
+  background-color: #E29578 !important;
+  color: #FFEce5 !important;
+  border-color: #32373B !important;
+}
+
+.button a:hover {
+  background-color: #FFEce5 !important;
+  color:#E29578 !important;
+  box-shadow: none !important;
+}
+
+aside{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #FFECE5;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #FFECE5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFDDD2;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  margin-top: 20%;
+}
+  
+  input [type=text] {
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    width: 40%;
+    height: 20%;
+    background-color: #E29578;
+    color: white;
+    border-color: #32373B;
+    padding: 1em 2em;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: white;
+    color: #E29578;
+  }
+
+  @media screen and (max-width:767px)
+  {
+      .container-fluid{
+        height: 340vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        ;
+        justify-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #FFECE5;
+      }
+
+      header{
+          grid-area: header;
+          
+          width: 100%;
+      }
+
+      aside{
+          grid-area: aside;
+          padding-top: 5%;
+          width: 100%;
+      }
+
+      main{
+          grid-area: main;
+          padding-bottom: 30px;
+          
+          height: 100vh;
+          width: 100vw;
+      }
+
+  }

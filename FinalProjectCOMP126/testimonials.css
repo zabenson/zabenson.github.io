@@ -1,0 +1,44 @@
+body {
+    background-color:  #FFDDD2;
+    font-family: 'Lato', sans-serif;
+    color:#32373B;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.button {
+    display: flex;
+    margin-top: 10px;
+}
+
+.button a {
+    background-color: #E29578!important;
+    color: #FFEce5 !important;
+    border-color: #32373B  !important;
+    
+}
+
+.button a:hover {
+    background-color: #FFEce5  !important;
+    color:#E29578 !important;
+    box-shadow: none !important;
+
+}
+.card {
+    background-color: #FFEce5;
+    margin: 40px;
+}
+
+.card-title {
+
+    font-size: 25px;
+}
+.checked {
+    color: #E29578;
+}
